@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c3d88fa6639c9463d85260309c03bb68",
+    "content-hash": "133fce70e388b8aeeb77a51218672b33",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -489,6 +489,68 @@
                 }
             ],
             "time": "2020-12-29T14:50:06+00:00"
+        },
+        {
+            "name": "ezyang/htmlpurifier",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ezyang/htmlpurifier.git",
+                "reference": "4828fdf45a93eeeacfcbcc855f96f9a7e6b4ed44"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ezyang/htmlpurifier/zipball/4828fdf45a93eeeacfcbcc855f96f9a7e6b4ed44",
+                "reference": "4828fdf45a93eeeacfcbcc855f96f9a7e6b4ed44",
+                "shasum": ""
+            },
+            "require": {
+                "php": "~5.6.0 || ~7.0.0 || ~7.1.0 || ~7.2.0 || ~7.3.0 || ~7.4.0 || ~8.0.0 || ~8.1.0 || ~8.2.0 || ~8.3.0 || ~8.4.0"
+            },
+            "require-dev": {
+                "cerdic/css-tidy": "^1.7 || ^2.0",
+                "simpletest/simpletest": "dev-master"
+            },
+            "suggest": {
+                "cerdic/css-tidy": "If you want to use the filter 'Filter.ExtractStyleBlocks'.",
+                "ext-bcmath": "Used for unit conversion and imagecrash protection",
+                "ext-iconv": "Converts text to and from non-UTF-8 encodings",
+                "ext-tidy": "Used for pretty-printing HTML"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "library/HTMLPurifier.composer.php"
+                ],
+                "psr-0": {
+                    "HTMLPurifier": "library/"
+                },
+                "exclude-from-classmap": [
+                    "/library/HTMLPurifier/Language/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-2.1-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Edward Z. Yang",
+                    "email": "admin@htmlpurifier.org",
+                    "homepage": "http://ezyang.com"
+                }
+            ],
+            "description": "Standards compliant HTML filter written in PHP",
+            "homepage": "http://htmlpurifier.org/",
+            "keywords": [
+                "html"
+            ],
+            "support": {
+                "issues": "https://github.com/ezyang/htmlpurifier/issues",
+                "source": "https://github.com/ezyang/htmlpurifier/tree/master"
+            },
+            "time": "2024-03-13T03:41:45+00:00"
         },
         {
             "name": "fideloper/proxy",
@@ -1180,6 +1242,61 @@
                 "source": "https://github.com/laravel/tinker/tree/v2.9.0"
             },
             "time": "2024-01-04T16:10:04+00:00"
+        },
+        {
+            "name": "laravel/ui",
+            "version": "v2.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel/ui.git",
+                "reference": "d01a705763c243b07be795e9d1bb47f89260f73d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel/ui/zipball/d01a705763c243b07be795e9d1bb47f89260f73d",
+                "reference": "d01a705763c243b07be795e9d1bb47f89260f73d",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/console": "^7.0",
+                "illuminate/filesystem": "^7.0",
+                "illuminate/support": "^7.0",
+                "php": "^7.2.5|^8.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Laravel\\Ui\\UiServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Laravel\\Ui\\": "src/",
+                    "Illuminate\\Foundation\\Auth\\": "auth-backend/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylor@laravel.com"
+                }
+            ],
+            "description": "Laravel UI utilities and presets.",
+            "keywords": [
+                "laravel",
+                "ui"
+            ],
+            "support": {
+                "issues": "https://github.com/laravel/ui/issues",
+                "source": "https://github.com/laravel/ui/tree/v2.5.0"
+            },
+            "time": "2020-11-03T19:45:19+00:00"
         },
         {
             "name": "league/commonmark",
@@ -2534,6 +2651,93 @@
                 }
             ],
             "time": "2021-09-25T23:10:38+00:00"
+        },
+        {
+            "name": "smorken/ext-http",
+            "version": "v5.0.6",
+            "source": {
+                "type": "git",
+                "url": "https://bitbucket.org/scott_morken/laravel-ext-http.git",
+                "reference": "1b6e8315e479e284740141ed1a4ded47bbf55d0a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://bitbucket.org/scott_morken/laravel-ext-http/get/1b6e8315e479e284740141ed1a4ded47bbf55d0a.zip",
+                "reference": "1b6e8315e479e284740141ed1a4ded47bbf55d0a",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5.0",
+                "smorken/sanitizer": "~5.0"
+            },
+            "require-dev": {
+                "laravel/framework": "5.1.*",
+                "mockery/mockery": "dev-master",
+                "phpunit/phpunit": "~4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Smorken\\Ext\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Scott Morken",
+                    "email": "scott.morken@phoenixcollege.edu"
+                }
+            ],
+            "description": "HTTP extension for Laravel 5.1",
+            "homepage": "https://bitbucket.org/scott_morken/laravel-ext-http",
+            "support": {
+                "source": "https://bitbucket.org/scott_morken/laravel-ext-http/src/1b6e8315e479e284740141ed1a4ded47bbf55d0a/?at=v5.0.6"
+            },
+            "abandoned": true,
+            "time": "2017-06-12T17:57:39+00:00"
+        },
+        {
+            "name": "smorken/sanitizer",
+            "version": "v5.0.4",
+            "source": {
+                "type": "git",
+                "url": "https://bitbucket.org/scott_morken/laravel-sanitizer.git",
+                "reference": "d73948d2bb05b94f95fd16b2c3e253dc76758555"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://bitbucket.org/scott_morken/laravel-sanitizer/get/d73948d2bb05b94f95fd16b2c3e253dc76758555.zip",
+                "reference": "d73948d2bb05b94f95fd16b2c3e253dc76758555",
+                "shasum": ""
+            },
+            "require": {
+                "ezyang/htmlpurifier": "dev-master",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "dev-master",
+                "phpunit/phpunit": "~4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "src/helpers.php"
+                ],
+                "psr-4": {
+                    "Smorken\\Sanitizer\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Scott Morken",
+                    "email": "scott.morken@phoenixcollege.edu"
+                }
+            ],
+            "time": "2016-04-06T16:47:30+00:00"
         },
         {
             "name": "swiftmailer/swiftmailer",
